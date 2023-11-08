@@ -1,0 +1,9 @@
+<h1 *ngIf="gameName">Welcome to {{gameName}}</h1>
+
+<div *ngIf="gameDetails">
+  <mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let role of gameDetails.content.selectedRoles">
+      <img height="100%" [src]=getRole(role)>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

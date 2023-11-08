@@ -1,4 +1,13 @@
+<button [routerLink]="['/new']" >New</button>
+
+<!--<div *ngIf="games$ | async; let games">-->
+<!--<div *ngFor="let game of games"><p>{{game.content.name}}</p></div>-->
+<!--</div>-->
+
 <div *ngIf="games$ | async; let games">
-<div *ngFor="let game of games"><p>{{game.content.id}}</p></div>
+<mat-grid-list cols="4" rowHeight="1:1"  *ngFor="let game of games">
+  <mat-grid-tile [routerLink]="['/detail/' + game.content.name]">
+    <p>{{game.content.name}}</p>
+  </mat-grid-tile>
+</mat-grid-list>
 </div>
-<p>overview works!</p>

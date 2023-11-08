@@ -7,18 +7,27 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {OverviewComponent} from './overview/overview.component';
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
+import {CreateComponent} from './create/create.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatGridListModule} from "@angular/material/grid-list";
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewComponent
+    OverviewComponent,
+    CreateComponent,
+    DetailComponent
   ],
   imports: [
+    MatGridListModule,
     CommonModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

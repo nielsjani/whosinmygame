@@ -14,4 +14,9 @@ export class GameService {
     const headers = new HttpHeaders({'apikey':'654acf9908b5897ecb838f3a'});
     return this.httpClient.get('https://whosinmygame-4e51.restdb.io/rest/game', {headers});
   }
+
+  create(name: string, selectedRoles: string[]) {
+    const headers = new HttpHeaders({'apikey':'654acf9908b5897ecb838f3a'});
+    return this.httpClient.post('https://whosinmygame-4e51.restdb.io/rest/game', {content: {name, selectedRoles}}, {headers});
+  }
 }

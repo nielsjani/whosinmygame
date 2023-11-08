@@ -1,0 +1,4 @@
+<div *ngIf="games$ | async; let games">
+<div *ngFor="let game of games"><p>{{game.content.id}}</p></div>
+</div>
+<p>overview works!</p>

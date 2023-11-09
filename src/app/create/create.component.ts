@@ -38,6 +38,30 @@ export class CreateComponent {
 
     'spy_blue',
     'spy_red',
+
+    'conman_blue',
+    'conman_red',
+
+    'coyboy_blue',
+    'coyboy_red',
+
+    'criminal_blue',
+    'criminal_red',
+
+    'dealer_blue',
+    'dealer_red',
+
+    'demon_blue',
+    'demon_red',
+
+    'doctor_blue',
+    'engineer_red',
+
+    'tuesday_knight_blue',
+    'dr_boom_red',
+
+    'enforcer_blue',
+    'enforcer_red',
   ];
 
 
